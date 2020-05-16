@@ -181,3 +181,11 @@
 < i m not sure and a <EOS>
 
 < you re smart to take bath . <EOS>
+
+encoder1.load_state_dict(torch.load('/content/drive/My Drive/translate/encoder_tran_en_de_new_qus_ans.dict'))
+attn_decoder1.load_state_dict(torch.load('/content/drive/My Drive/translate/decoder_with_attention_tran_en_de_new_qus_ans.dict'))
+
+encoder1.load_state_dict(torch.load('/content/drive/My Drive/translate/encoder_tran_en_de_new_qus_ans.dict'))
+attn_decoder1.load_state_dict(torch.load('/content/drive/My Drive/translate/decoder_with_attention_tran_en_de_new_qus_ans.dict'))
+
+generator.load_state_dict(torch.load('/content/drive/My Drive/translate/generator_question_answer.th', map_location='cpu'))
